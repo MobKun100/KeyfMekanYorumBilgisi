@@ -29,7 +29,7 @@ def index():
     # Kullanıcıya aranan otel adını söylediğini bildirir
     # Otelin puan bilgisini çeker
     
-    sleep(5)
+    sleep(2)
 
     try:
         try:
@@ -95,7 +95,9 @@ def index():
     tarayici.quit()
 
     
-    return jsonify({    "yorum_Bilgisi":yorum_Bilgisi, "yorum_Bilgisi1":yorum_Bilgisi1, "yorum_Bilgisi2":yorum_Bilgisi2, "yorum_Bilgisi3":yorum_Bilgisi3, "yorum_Bilgisi4":yorum_Bilgisi4, "puan_Bilgisi":puan_Bilgisi, "puan_Bilgisi1":puan_Bilgisi1, "puan_Bilgisi2":puan_Bilgisi2, "puan_Bilgisi3":puan_Bilgisi3, "puan_Bilgisi4":puan_Bilgisi4})
+    return jsonify({
+    "yorum_Bilgisi":yorum_Bilgisi, "yorum_Bilgisi1":yorum_Bilgisi1, "yorum_Bilgisi2":yorum_Bilgisi2, "yorum_Bilgisi3":yorum_Bilgisi3, "yorum_Bilgisi4":yorum_Bilgisi4, "puan_Bilgisi":puan_Bilgisi, "puan_Bilgisi1":puan_Bilgisi1, "puan_Bilgisi2":puan_Bilgisi2, "puan_Bilgisi3":puan_Bilgisi3, "puan_Bilgisi4":puan_Bilgisi4
+})
 
 if __name__ == '__main__':
     app.run(debug=True)
